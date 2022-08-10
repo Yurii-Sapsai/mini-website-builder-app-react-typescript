@@ -7,14 +7,14 @@ import {
 } from '../../../store/workSpaceSlice/workSpaceSlice';
 
 import { useAppDispatch } from '../../../store/hooks';
-import { Block } from '../../../interfaces/Block';
+import { IBlock } from '../../../interfaces/IBlock';
 
 import Navbar from './Navbar/Navbar';
 import { imageImg } from '../../../const/images';
 
 
 
-const ImageContainer: FC<Block> = ({ id, active }) => {
+const ImageContainer: FC<IBlock> = ({ id, active }) => {
 
     const dispatch = useAppDispatch();
 

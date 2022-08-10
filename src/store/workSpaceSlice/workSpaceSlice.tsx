@@ -4,10 +4,10 @@ import type { RootState } from '../store';
 
 import { v4 as uuidv4 } from 'uuid';
 
-import { Block } from '../../interfaces/Block';
+import { IBlock } from '../../interfaces/IBlock';
 
 type BlocksState = {
-    blocks: Block[]
+    blocks: IBlock[]
 }
 
 const initialState: BlocksState = {
@@ -18,7 +18,7 @@ export const workSpaceSlice = createSlice({
     name: 'workSpace',
     initialState,
     reducers: {
-        addBlockToWorkSpace(state, action: PayloadAction<Block>) {
+        addBlockToWorkSpace(state, action: PayloadAction<IBlock>) {
 
             let newState = state.blocks;
             newState.push(action.payload);
@@ -56,7 +56,7 @@ export const workSpaceSlice = createSlice({
             let newState = state.blocks;
 
             let blockIndex: number = 0;
-            let cloneBlock: Block = { type: '', value: '', id: '', active: true };
+            let cloneBlock: IBlock = { type: '', value: '', id: '', active: true };
 
             newState.map((block) => {
                 if (block.id === action.payload) {

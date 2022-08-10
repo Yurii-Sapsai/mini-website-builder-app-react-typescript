@@ -7,14 +7,14 @@ import {
 } from '../../../store/workSpaceSlice/workSpaceSlice';
 
 import { useAppDispatch } from '../../../store/hooks';
-import { Block } from '../../../interfaces/Block';
+import { IBlock } from '../../../interfaces/IBlock';
 
 import Navbar from './Navbar/Navbar';
 import { paragraphImg } from '../../../const/images';
 
 
 
-const ParagraphContainer: FC<Block> = ({ id, active }) => {
+const ParagraphContainer: FC<IBlock> = ({ id, active }) => {
 
     const [paragraph, setParagraph] = useState('');
 

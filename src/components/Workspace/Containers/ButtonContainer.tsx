@@ -7,14 +7,14 @@ import {
 } from '../../../store/workSpaceSlice/workSpaceSlice'
 
 import { useAppDispatch } from '../../../store/hooks';
-import { Block } from '../../../interfaces/Block';
+import { IBlock } from '../../../interfaces/IBlock';
 
 import Navbar from './Navbar/Navbar';
 import { buttonImg } from '../../../const/images';
 
 
 
-const ButtonContainer: FC<Block> = ({ id, active }) => {
+const ButtonContainer: FC<IBlock> = ({ id, active }) => {
 
     const [buttonName, setButtonName] = useState('');
 

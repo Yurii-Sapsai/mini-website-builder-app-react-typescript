@@ -1,4 +1,4 @@
-export interface Block {
+export interface IBlock {
     type: string,
     value: string,
     active: boolean,
