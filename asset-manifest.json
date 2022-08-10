@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mini-website-builder-app-react-typescript/static/css/main.26fde994.css",
+    "main.js": "/mini-website-builder-app-react-typescript/static/js/main.c616d4c8.js",
+    "index.html": "/mini-website-builder-app-react-typescript/index.html",
+    "main.26fde994.css.map": "/mini-website-builder-app-react-typescript/static/css/main.26fde994.css.map",
+    "main.c616d4c8.js.map": "/mini-website-builder-app-react-typescript/static/js/main.c616d4c8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26fde994.css",
+    "static/js/main.c616d4c8.js"
+  ]
+}
